@@ -18,6 +18,15 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Eventora API is working!");
 });
+
+app.get("/health", (req, res) => {
+  res.send("Health route is working!");
+});
+
+app.get("/api-test", (req, res) => {
+  res.send("API test route is working!");
+});
+
 app.get("/api/test", (req, res) => {
   res.send("API route is working!");
 });
