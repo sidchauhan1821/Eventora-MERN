@@ -18,6 +18,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Eventora API is working!");
 });
+app.get("/api/test", (req, res) => {
+  res.send("API route is working!");
+});
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/events', eventRoutes);
